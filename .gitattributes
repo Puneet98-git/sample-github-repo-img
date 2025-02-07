@@ -1,8 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-git add .gitattributes
-git commit -m "Add .gitattributes"
-git push origin master
-git pull origin master
+git init
+git add . images index.html style.css 
+git commit -m "Initial commit"
 git remote add origin https://github.com/Puneet98-git/sample-github-repo-img.git
 git push -u origin master
