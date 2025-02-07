@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PK Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+        header h1 {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    main section h2 {
+        font-size: 18px;
+    }
+    main section p {
+        font-size: 14px;
+    }
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Flexbox for Responsive Layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1 1 100%;
+    padding: 10px;
+}
+.left{
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    display: inline-block;
+    border-radius: 12px;
+    /* border: 2px solid red; */
+}
+.left img{
+    width: 130px;
+    filter: invert(100%);
+}
+.left div{
+    line-height: 19px;
+    font-size: 20px;
+    text-align: center;
+}
+.mid{
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    /* border: 2px solid blue; */
+}
+.right{
+    position: absolute;
+    text-align: right;
+    right: 0px;
+    top: 29px;
+    display: inline-block;
+    /* border: 2px solid black; */
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 16px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.navbar li a:hover, 
+.navbar li a.active{
+    text-decoration: underline;
+    color: grey;
+}
+.btn{
+    margin: 19px 0px;
+    flex-direction: column;
+    background-color: white;
+    display: inline;
+    text-align: center;
+    text-decoration:none;
+    padding: 4px 6px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: gray;
+}
+.container{
+    border: 2px solid green;
+    resize: vertical;
+    margin: 77px 32px;
+    padding: 0px 9px;
+    width: 46%;
+    border-radius: 30px
+}
+.form-group input {
+    text-align: center;
+    display: block;
+    resize: vertical;
+    width: 78%;
+    padding: 6px;
+    border: 1px solid black;
+    margin: 15px auto;
+    font-size: 20px;
+    border-radius: 13px;
+}
+.container h1 {
+    text-align: center;
+}
+.container button {
+    display: block;
+    width: 81%;
+    margin: 15px auto;
+}
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="image/car-logo-png-2320.png" style="width: 130px">
+            <div>PK Car</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar" style=" width: auto">
+                <li><a href="#" class="Active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul> 
+        </div>
+        <!-- right box for buttons -->
+        <div class="right" style="width: auto">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+        <div class="container">
+        <h1 style="font-size: 4vw;">WELCOME TO OUR CAR SHOWROOM</h1>
+            <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Car Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Model Name">
+        </div>
+        <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
