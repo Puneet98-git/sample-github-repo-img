@@ -1,35 +1,77 @@
-/* Navigation */
-#navbar{
+/* Base styles */
+#navbar {
     flex-direction: column;
 }
 
-/* Home */
 #Home {
     padding: 20px 20px;
 }
+
 #Home .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 #Home .container .content {
     width: 50%;
 }
+
 #Home .container .content h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+
 #Home .container .content p {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
+
 #Home .container .content button {
     font-size: 1.1rem;
 }
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    #Home .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #Home .container .content {
+        width: 100%;
+    }
+    #Home .container .content h1 {
+        font-size: 2rem;
+    }
+    #Home .container .content p {
+        font-size: 1rem;
+    }
+    #Home .container .content button {
+        font-size: 1rem;
+    }
+}
 
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #Home .container .content h1 {
+        font-size: 2.2rem;
+    }
+    #Home .container .content p {
+        font-size: 1.05rem;
+    }
+    #Home .container .content button {
+        font-size: 1.05rem;
+    }
+}
 
-/* Services */
-
-#services {
-
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 769px) {
+    #Home .container .content h1 {
+        font-size: 2.5rem;
+    }
+    #Home .container .content p {
+        font-size: 1.1rem;
+    }
+    #Home .container .content button {
+        font-size: 1.1rem;
+    }
 }
