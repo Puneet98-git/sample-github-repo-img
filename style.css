@@ -1,71 +1,217 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+/* CSS Reset */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(image/buick.jpg);
 }
 
-header, main, footer{
-    padding: 20px;
+html{
+    scroll-behavior: smooth;
 }
-header {
+
+/* Global Styling */
+body{
+    font-family: Arial, sans-serif;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar Styling */
+#navbar{
+    display: flex;
+    align-items: center;
     background-color: black;
-    color: blue;
-    text-align: center;
 }
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Navigation Bar: Logo and image */
+#logo{
+    margin: 10px 45px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+#logo img{
+    width: 56px;
+    height: 34px 45px;
 }
 
-nav ul li a {
-    color: aqua;
+/* Navigation Bar: List Styling */
+#navbar {
+    position: relative;
+}
+#navbar h1{
+    color: white;
+    margin-left: 20px;
+}
+#navbar::before{
+    content: ;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    /* color: white */
+    list-style: none;
+    font-style: 1.3erm;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
     text-decoration: none;
 }
-.hamburger {
-    display: none;
-    font-size: 24px;
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    
+}
+/* Sections Styling */
+section{
+    padding: 20px 40px;
+}
+/* Home section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    background: url("2024_ford_mustang.jpg");
+    padding: 40px 40px;
+    justify-content: end;
+    align-items: baseline;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+#Home::before{
+    content: ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#Home h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#Home p{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+#Home button{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.3rem;
     cursor: pointer;
 }
-
-/* Responsive Styles */
-@media (max-media: 768px) {
-    header h1 {
-        font-size: 20px;
-    }
-    nav ul li a {
-        font-size: 14px;
-    }
-    main section h2 {
-        font-size: 18px;
-    }
-    main section p {
-        font-size: 14px;
-    }
+#Home button:hover{
+    background-color: black;
+    color: white;
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
-/* Flexbox for Responsive Layout */
-main {
+/* Services section  */
+#services{
     display: flex;
-    flex-wrap: wrap;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid brown;
+}
+#services .box img{
+    width: 100%;
+}
+#services .box h2{
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+#services .box p{
+    font-size: 1.3rem;
+    margin: 10px 0;
 }
 
-section {
-    flex: 1 1 100%;
-    padding: 10px;
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
 }
-@media (min-width: 1024px) {
-    section {
-        flex: 1 1 33.33%;
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+/* Responsive Styling */
+@media(max-width: 768px){
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar ul li{
+        margin: 10px 0;
+    }
+    #navbar ul li a{
+        font-size: 1.5rem;
     }
 }
 
+
+/* Responsive Styling */
+@media(max-width: 768px){
+    #Home{
+        background: url(2024_ford_mustang.jpg);
+    }
+    #Home h1{
+        font-size: 2.5rem;
+    }
+    #Home p{
+        font-size: 1.1rem;
+    }
+    #Home button{
+        font-size: 1.1rem;
+    }
+}
+/* Responsive Styling */
+@media(max-width: 768px){
+    #services{
+        flex-direction: column;
+        margin: 20px;
+    }
+    #services .box{
+        margin: 20px 0;
+    }
+    #services .box img{
+        width: 100%;
+    }
+    #services .box h2{
+        font-size: 1.5rem;
+    }
+    #services .box p{
+        font-size: 1rem;
+    }
+}
