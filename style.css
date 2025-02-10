@@ -1,164 +1,133 @@
 /* CSS Reset */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-/* Global Styling */
-body{
-    font-family: Arial, sans-serif;
-}
-/* CSS Variables */
+/* CSS Variable */
 :root{
     --navbar-height: 59px;
 }
-/* Navigation Bar Styling */
+
+/* Navigation Bar: logo and img */
 #navbar{
-    display: inline-flex;
-    align-items: center;
-    background-color: black;
+    display: flex;
+    background-color: grey;
 }
-/* Navigation Bar: Logo and image */
+
 #logo{
-    margin: 10px 45px;
+    margin: 10px 6px;
+
 }
 
 #logo img{
-    width: 56px;
-    height: 34px 45px;
-}
+    margin: 10px 6px;
 
-/* Navigation Bar: List Styling */
-#navbar {
+}
+/* Navigation Bar: Styling */
+#navbar{
     position: relative;
 }
-#navbar h1{
-    color: white;
-    margin-left: 20px;
+
+#navbar ul{
+    display: flex;
+    font-family: cursive;
 }
+
 #navbar::before{
     content: ;
     background-color: black;
-    position: absolute;
+    position:absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.5;
-}
-#navbar ul{
-    display: flex;
+    opacity: 0.4;
 }
 #navbar ul li{
-    /* color: white */
     list-style: none;
-    font-style: 1.3erm;
+    font-size: 1.3rem;
 }
+
 #navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
     color: white;
     display: block;
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
 }
-#navbar ul li a:hover{
-    background-color: white;
-    color: black;
-    
-}
-/* Sections Styling */
-section{
-    padding: 20px 40px;
-}
-/* Home section */
+
+/* Home Section */
 #Home{
     display: flex;
     flex-direction: column;
-    background: url("2024_ford_mustang.jpg");
-    padding: 40px 40px;
-    justify-content: end;
-    align-items: baseline;
-    height: 100vh;
-    color: white;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-}
-#Home::before{
-    content: ;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.5;
-}
-#Home h1{
-    color: white;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-#Home p{
-    color: white;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
-#Home button{
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-#Home button:hover{
-    background-color: black;
-    color: white;
-}
-/* Services section  */
-#services{
-    display: flex;
-    margin: 34px;
-}
-#services .box{
-    border: 2px solid brown;
-}
-#services .box img{
-    width: 100%;
-}
-#services .box h2{
-    font-size: 1.8rem;
-    margin: 10px 0;
-}
-#services .box p{
-    font-size: 1.3rem;
-    margin: 10px 0;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Utility Classes */
+#Home{
+    content: ;
+    background: url("./image/buick.jpg") no-repeat center center/cover;
+    position:absolute;
+    height: 60%;
+    width: 70%;
+    z-index: -1;
+    opacity: o.90;   
+}
+
+#Home h1{
+    color:white;
+    text-align: center;
+    font-family: "Bree Serif", serif;
+}
+
+#Home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Bree Serif", serif;
+}
+
+#Home .btn{
+    cursor: pointer;
+        
+}
+
+#services{
+    margin: 375px 0px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+
+}
+
+
+/* Utility Class */
 .h-primary{
-    font-size: 3.8rem;
+    font-size: 3.0rem;
     padding: 12px;
 }
-.h-secondary{
-    font-size: 2.8rem;
-    padding: 12px;
+h1.h-primary.center {
+    font-size: 3.0rem;
+    margin: 350px 0px;
+    text-align: center;
 }
 .btn{
-    background-color: black;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
     color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 1.3rem;
+    margin: 17px;
+    border-radius: 10px;
     cursor: pointer;
-}
-.btn:hover{
-    background-color: white;
-    color: black;
 }
