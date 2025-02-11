@@ -1,77 +1,60 @@
-/* Base styles */
+/* Navigation */
 #navbar {
     flex-direction: column;
 }
 
-#Home {
-    padding: 20px 20px;
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+/* Home section */
+#home{
+    height: 370px; 
+    padding: 3px 28px;
 }
 
-#Home .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#home::before{
+    height: 480px; 
 }
 
-#Home .container .content {
-    width: 50%;
+#home p{
+    font-size: 13px;
 }
 
-#Home .container .content h1 {
-    font-size: 2.5rem;
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
     margin-bottom: 20px;
 }
 
-#Home .container .content p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+/* Clients section */
+#clients{
+    flex-wrap: wrap;
 }
 
-#Home .container .content button {
-    font-size: 1.1rem;
-}
-/* Small devices (phones, 600px and down) */
-@media (max-width: 600px) {
-    #Home .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    #Home .container .content {
-        width: 100%;
-    }
-    #Home .container .content h1 {
-        font-size: 2rem;
-    }
-    #Home .container .content p {
-        font-size: 1rem;
-    }
-    #Home .container .content button {
-        font-size: 1rem;
-    }
+#clients img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
 }
 
-/* Medium devices (tablets, 600px to 768px) */
-@media (min-width: 601px) and (max-width: 768px) {
-    #Home .container .content h1 {
-        font-size: 2.2rem;
-    }
-    #Home .container .content p {
-        font-size: 1.05rem;
-    }
-    #Home .container .content button {
-        font-size: 1.05rem;
-    }
+/* Contact us section */
+#contact-box form{
+    width:80%;
 }
+/* Footer */
 
-/* Large devices (desktops, 768px and up) */
-@media (min-width: 769px) {
-    #Home .container .content h1 {
-        font-size: 2.5rem;
-    }
-    #Home .container .content p {
-        font-size: 1.1rem;
-    }
-    #Home .container .content button {
-        font-size: 1.1rem;
-    }
+/* Utility classes */
+.h-primary{
+    font-size:26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
 }
