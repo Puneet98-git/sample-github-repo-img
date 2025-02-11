@@ -4,133 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA+Compatible" content="ie=edge">
     <title>PK Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
 </head>
-<link rel="stylesheet" href="style.css">
-<style>
-    /* CSS Reset */
-    body {
-        color: white;
-        margin: 0px;
-        padding: 0px;
-        background: url(aston-martin-2118857_1280.jpg);
-        background-color: black;
-        cursor: pointer;
-    }
-
-    .left {
-        left: 20px;
-        top: 5px;
-        position: fixed;
-    }
-
-    .right {
-        display: flex;
-        width: 75%;
-        margin: 20px auto;
-        border: 2px solid whitesmoke;
-    }
-
-    .navbar {
-        display: inline;
-    }
-
-    .navbar li {
-        display: inline;
-        font-size: 30px;
-    }
-
-    .navbar li a {
-        color: white;
-        text-decoration: none;
-        padding: 34px 20px;
-        cursor: pointer;
-    }
-
-    #navbar li a:hover,
-    #navbar li a.active {
-        text-decoration: white;
-        color: grey
-    }
-
-    .btn {
-        font-family: cursive;
-        margin: 0px 5px;
-        color: white;
-        background-color: black;
-        padding: 2px 10px;
-        border: 2px solid grey;
-        border-radius: 10px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .btn:hover {
-        background-color: grey;
-    }
-
-    .container {
-        border-right: 2px solid white;
-        margin: 35px 15px;
-        padding: 50px 280px;
-        width: 100%;
-        border: 2px auto;
-    }
-    .form-group{
-        margin: 25px auto;
-        width: 420px;
-    }
-
-    .form-group input {
-        text-align: center;
-        display: block;
-        width: 420px;
-        padding: 0px;
-        border: 2px solid black;
-        margin: 10px auto;
-        font-size: 22px;
-        border-radius: 8px;
-    }
-    .container h1{
-        text-align: center;
-    }
-    .container button{
-        display: block;
-        width: 429px;
-        margin: 25px auto;
-    }
-</style>
 
 <body>
-    <header class="header">
-        <div class="left">
+    <nav id="navbar">
+        <div id="logo">
             <img src="Blue Gold Minimalist Car Showroom Logo.png" alt="">
         </div>
 
-        <div class="right">
-            <ul class="navbar">
-                <li><a href="#" class="active"></a>Home</li>
-                <li><a href="#"></a>Services</li>
-                <li><a href="#"></a>About Us</li>
-                <li><a href="#"></a>Contact Us</li>
-                <li><a href="#"></a>Book Online</li>
-            </ul>
-        </div>
-    </header>
-    <div class="container">
-        <h1>Easy & Fast Way To Rent A Car</h1>
-        <form action="noaction.php">
-            <div class="form-group">
-                <input type="text" name="" placeholder="Select Your Car">
-                <input type="text" name="" placeholder="Pickup">
-                <input type="text" name="" placeholder="Drop Off">
-                <input type="text" name="" placeholder="Your Name">
-                <input type="text" name="" placeholder="Email Address">
-                <input type="text" name="" placeholder="Mobile Number">
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Easy & Fast Way To Rent A Car</h1>
+        <p>Book the selected car effortlessly, pay for driving only.</p>
+        <p>Join our service instantly by installing our app.</p>
+        <button class="btn">Book Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="Shelby.jpg" alt="">
+                <h2 class="h-secondary center">Car Booking</h2>
+                <p class="center">The Shelby Mustang is a high-performance variant of the Ford Mustang built by Shelby American .</p>
             </div>
-            <button class="btn">Submit</button>
-        </form>
-    </div>
+            <div class="box">
+                <img src="Toyota-camry.jpg" alt="">
+                <h2 class="h-secondary center">Car Booking</h2>
+                <p class="center">The Shelby Mustang is a high-performance variant of the Ford Mustang built by Shelby American .</p>
+            </div>
+            <div class="box">
+                <img src="Toyota-camry.jpg" alt="">
+                <h2 class="h-secondary center">Car Booking</h2>
+                <p class="center">The Shelby Mustang is a high-performance variant of the Ford Mustang built by Shelby American .</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary">Our Sponsers</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="Volkswagen-Emblem.png" alt="Our Sponsers">
+                <img src="toyota.jpg" alt="Our Sponsers">
+                <img src="Skoda-Logo-PNG-File.png" alt="Our Sponsers">
+                <img src="ford logo.jpg" alt="Our Sponsers">
+                <img src="Aston-Martin-Logo-2003-2021.png" alt="Our Sponsers">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div class="contact box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.carrental.com. All rights reserved!
+        </div>
+    </footer>
 </body>
 
 </html>
